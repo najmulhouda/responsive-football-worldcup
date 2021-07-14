@@ -1,5 +1,6 @@
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
+/* common styles utilities */
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -7,6 +8,7 @@ body{
 .container{
     margin-bottom: 70px;
 }
+/* top section */
 #top-background{
     background-color: #2D25A0;
     width: 100%;
@@ -41,15 +43,13 @@ body{
 .top-section-top img{
     width: 90%;
 }
-
+  /* main section */
 .best-players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 10%;
     margin-right: 10%;
-}
-    
-
+}  
 .players{
     box-sizing: 2px;
     box-shadow: 0px 0px 40px gray;
@@ -89,7 +89,6 @@ body{
 /* -----------------Media Query for Mobile---------------------*/
 @media (max-width:688px) {
     #top-background{
-        color: red;
         width: 100%;
     }
     .top-section{
@@ -97,30 +96,48 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0px;
+        padding-left: 140px;
         margin: 0;
         width: 50%;
     }
     .top-section-top{
-        /* padding-right:100px; */
         width: 100%;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;         */
     }
     
     .top-section-top h1{
-        font-size: 30px;
-    
+        font-size: 36px;
     }
-
     .best-players{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        
+        align-items: center;   
     }
-
+    .footer-image img{
+        width: 100%;
+        height: 100%;
 }
+/*--------- Media query for tablate------------- */
+
+@media only screen and (min-width: 688px) and 
+
+(max-width: 992px){
+    .top-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 140px;
+        margin: 0;
+        width: 50%;
+    }    
+    .top-section-top h1{
+        font-size: 50px;
+    }
+    .best-players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }        
+}}
