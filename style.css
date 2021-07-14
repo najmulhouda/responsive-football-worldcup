@@ -89,7 +89,7 @@ body{
 /* -----------------Media Query for Mobile---------------------*/
 @media (max-width:688px) {
     #top-background{
-        width: 100%;
+        width: 700px;
     }
     .top-section{
         display: flex;
