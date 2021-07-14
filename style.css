@@ -89,6 +89,7 @@ body{
 /* -----------------Media Query for Mobile---------------------*/
 @media (max-width:688px) {
     #top-background{
+        color: red;
         width: 100%;
     }
     .top-section{
@@ -98,7 +99,7 @@ body{
         align-items: center;
         padding: 0px;
         margin: 0;
-        width: 100%;
+        width: 50%;
     }
     .top-section-top{
         /* padding-right:100px; */
@@ -108,6 +109,12 @@ body{
         justify-content: center;
         align-items: center;         */
     }
+    
+    .top-section-top h1{
+        font-size: 30px;
+    
+    }
+
     .best-players{
         display: none;
         flex-direction: column;
